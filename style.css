@@ -1,0 +1,207 @@
+body {
+    background: rgb(117, 117, 117); /*hover to pick*/
+    color: white; /*Default text color unless stated otherwise*/
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif; /*multiple for different systems*/
+    margin: 0;
+    padding: 0;
+}
+h1 /*Targeting h1*/ {
+    color: RED;
+    background: black;
+}
+h2 {
+    color: rgb(0, 0, 0);
+    opacity: 0.5;
+}
+button {
+    background: rgb(168, 114, 114); /*fill in*/
+    border: none;
+    color: white; /*text color*/
+}
+button {
+    border-radius: 10px 10px 10px 10px;
+}
+
+/*layout*/
+header {
+    background: black;
+    /*spacing*/
+    margin: 20px; /*adds spacing around*/
+}
+.feature-box {
+    background: white;
+    color: gray;
+    margin: 20% 40%; /*20-top/bottom 40-left/right*/
+    display: flex; /*flexbox layout*/
+    flex-direction: row;
+}
+/*div {
+    background: red;
+    width: 100px;
+    height: 40px;
+    margin: auto;
+}*/
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; /*no bullets*/
+}
+li {
+    display: inline-block;
+    margin: 20px;
+}
+iframe {
+    height: 500px;
+    width: 700px;
+    border: none;
+}
+footer {
+    background: rgb(90, 90, 90);
+    position: relative;
+    margin: 500px 0px;
+    padding: 20px 40px 10px 50px; /*adds spacing inside, clockwise dimensions*/
+}
+
+/*divs*/
+#box1 {
+    width: 400px;
+    height: 400px;
+    background: orange;
+}
+#box2 {
+    width: 300px;
+    height: 300px;
+    background: pink;
+}
+#box3 {
+    width: 200px;
+    height: 200px;
+    background: blue;
+}
+#box4 {
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+#divtest {
+    margin-left: 1%;
+}
+
+#span {
+    font-size: 20px;
+    margin-top: 500px;
+    width: 500px;
+    background-color: pink;
+}
+span {
+    color: black;
+}
+article {
+    background: rgb(209, 209, 209);
+}
+
+/*Box Model: Margin, Border, Padding*/
+#cssbox {
+    background: chartreuse;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    line-height: 300px; /*centers text vertically*/
+    margin: 50px;
+    border-width: 15px;
+    border-color: pink;
+    border-style: solid;
+}
+#boxvis {
+    background: rgb(211, 99, 99);
+    width: 1400px;
+    padding: 5px;
+    border: 15px green;
+    border-style: double;
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+/*css grid*/
+.pr {
+    background: rgb(50, 173, 116);
+    border: 5px solid white;
+}
+.grid {
+    background: transparent;
+    color: black;
+    font-size: 30px;
+    width: 80%;
+    display: grid; /*displays grid*/
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    grid-auto-rows: minmax(100px, auto);
+    /*(initial height, flexible to content)*/
+    justify-items: stretch; /*puts content to start, center, or end of grid space horizontally; default is stretch*/
+    align-items: stretch; /*puts content to start, center, or end of grid space vertically; default is stretch*/
+}
+#prone {
+    grid-column: 1/3; /*takes content from grid space 1 to 3*/
+    grid-row: 1/3;
+}
+#prtwo {
+    grid-column: 3;
+    grid-row: 1/4;
+}
+#prthree {
+    background-color: transparent;
+    grid-column: 2/4;
+    grid-row: 3;
+}
+#prfour {
+    grid-column: 1; /*keeps it in column 1... or else will auto move*/
+    grid-row: 2/4;
+}
+
+/*flexbox*/
+.flexbox1 div {
+    border: 5px solid gray;
+    /*flex: 1; /*changes all divs to even widths*/
+}
+.flexbox1 {
+    margin-bottom: 50px;
+    font-size: 15px;
+    display: flex;
+    /*align-items: stretch; /*default stretch, can be start, end, center vertically*/
+    /*flex-direction: column; /*changes back to column*/
+}
+#flex1-one {
+    flex: 2; /*value 1 is same width anything higher changes*/
+    order: 2;
+}
+#flex1-two {
+    flex: 1;
+    order: 1;
+}
+#flex1-three {
+    flex: 1;
+    order: 3;
+}
+/*adding margins-ish*/
+.flexbox2 div {
+    border: 5px solid gray;
+    flex-basis: 30%; /*width but flex-y*/
+}
+.flexbox2 {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-evenly; /*evenly put space on either side of */
+}
+/*wrapping*/
+.flexbox3 > * {
+    border: 5px solid gray;
+    flex-basis: 15%;
+    flex-grow: 1;
+}
+.flexbox3 {
+    margin-bottom: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
