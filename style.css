@@ -205,3 +205,8 @@ article {
     flex-wrap: wrap;
     gap: 1rem;
 }
+#myhomepage {
+    width: 80%;
+    margin-top: 100px;
+    margin-left: 10%;
+}
