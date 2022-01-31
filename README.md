@@ -1,7 +1,7 @@
-# homepage
+# Test Git
 
 Testing Website
 
 ## Subheader
 
-Hello Testing
+Testing
